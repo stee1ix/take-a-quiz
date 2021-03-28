@@ -1,0 +1,11 @@
+footer {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+}
+
+footer h3 {
+	padding: 0.6rem 0;
+	font-weight: lighter;
+	font-family: "Spartan";
+}

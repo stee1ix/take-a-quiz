@@ -1,0 +1,56 @@
+.main {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(5rem, 1fr));
+	grid-template-rows: 2fr 1fr 2fr;
+	height: 100vh;
+}
+.main img {
+	object-fit: cover;
+	align-self: center;
+	justify-self: center;
+	width: 70%;
+	z-index: -1;
+}
+
+.main #man {
+	width: 80%;
+	grid-column: 1/2;
+	grid-row: 1/3;
+	align-self: flex-start;
+	justify-self: flex-end;
+}
+.main .title {
+	grid-column: 2/3;
+	grid-row: 2/3;
+	text-align: center;
+	align-self: center;
+	justify-self: center;
+	width: max-content;
+	font-family: "Montserrat", sans-serif;
+}
+
+.main button {
+	cursor: pointer;
+	background: #13c7ee;
+	color: white;
+	border: none;
+	border-radius: 0.8rem;
+	margin-top: 1rem;
+	padding: 1.4rem 2.5rem 1.1rem 2.5rem;
+	font-size: 2rem;
+	font-weight: 700;
+	font-family: "Spartan", sans-serif;
+	box-shadow: 0rem 0.2rem 0.5rem rgb(138, 138, 138);
+	max-width: fit-content;
+}
+
+.main button:focus {
+	outline: none;
+}
+
+.main #woman {
+	grid-column: 3/4;
+	grid-row: 2/4;
+	align-self: center;
+	justify-self: center;
+}
