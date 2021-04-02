@@ -5,9 +5,9 @@ import HomeHeader from "../../components/home-header/home-header.component";
 import Footer from "../../components/footer/footer.component";
 
 class Homepage extends React.Component {
-	constructor() {
-		super();
-	}
+	// constructor() {
+	// 	super();
+	// }
 
 	render() {
 		return (

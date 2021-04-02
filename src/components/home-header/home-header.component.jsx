@@ -2,7 +2,6 @@ import React from "react";
 import "./home-header.style.css";
 import manIllus from "../../assets/man-illus.gif";
 import womanIllus from "../../assets/woman-illus.gif";
-import { Link } from "react-router-dom";
 
 const HomeHeader = () => {
 	return (

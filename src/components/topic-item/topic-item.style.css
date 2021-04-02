@@ -1,0 +1,11 @@
+.topic-item {
+	text-align: center;
+	padding-right: 5rem;
+}
+.topic-item img {
+	width: 30rem;
+}
+.topic-item h4 {
+	font-family: "Spartan", sans-serif;
+	padding-top: 1.5rem;
+}

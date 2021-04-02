@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import Credential from "../../components/credential/credential.component";
 import "./register.style.css";
 

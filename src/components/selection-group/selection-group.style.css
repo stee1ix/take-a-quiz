@@ -1,0 +1,33 @@
+.selection-group-main {
+	padding: 4rem 0;
+	height: 50rem;
+}
+
+.group-title {
+	padding-bottom: 3rem;
+}
+.group-title h3 {
+	padding-bottom: 1.5rem;
+}
+.group-title hr {
+	height: 1px;
+	background-color: #13c7ee;
+	border: none;
+	width: 35rem;
+}
+
+.topics-section {
+	display: flex;
+	justify-content: space-between;
+	overflow-x: auto;
+}
+
+.topics-section::-webkit-scrollbar {
+	display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.topics-section {
+	-ms-overflow-style: none; /* IE and Edge */
+	scrollbar-width: none; /* Firefox */
+}
