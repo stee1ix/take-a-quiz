@@ -12,9 +12,9 @@ class Profile extends React.Component {
 
 	render() {
 		return (
-			<div>
+			<div className="profile-main">
 				<Navbar username="stee1ix" profile />
-				<div className="profile-main">
+				<div className="profile-content">
 					<div className="profile-icon">
 						<img src={profileIcon} alt="profile icon" />
 						<h3>stee1ix</h3>
@@ -33,7 +33,9 @@ class Profile extends React.Component {
 						/>
 					</div>
 				</div>
-				<Footer />
+				<div className="footer">
+					<Footer />
+				</div>
 			</div>
 		);
 	}

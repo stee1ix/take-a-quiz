@@ -1,6 +1,7 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
 import "./App.css";
+import Footer from "./components/footer/footer.component";
 import Homepage from "./pages/homepage/homepage.component";
 import Login from "./pages/login/login.component";
 import Profile from "./pages/profile/profile.component";
@@ -9,7 +10,7 @@ import Selection from "./pages/selection/selection.component";
 
 function App() {
 	return (
-		<div>
+		<div className="app">
 			<Switch>
 				<Route exact path="/" component={Homepage} />
 				<Route path="/login" component={Login} />

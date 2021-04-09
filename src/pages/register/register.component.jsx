@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Credential from "../../components/credential/credential.component";
 import "./register.style.css";
 
@@ -16,7 +17,9 @@ const Register = () => {
 			<button className="regsiter-button">REGISTER</button>
 			<h4 className="login-option">
 				Already have an account!{" "}
-				<span style={{ color: "#13c7ee" }}>Login</span>
+				<Link to="./login">
+					<span style={{ color: "#13c7ee" }}>Login</span>
+				</Link>
 			</h4>
 		</div>
 	);

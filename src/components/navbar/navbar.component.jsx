@@ -29,8 +29,12 @@ const Navbar = ({ username, profile }) => {
 								/>
 							</Link>
 						</li>
-						<li>{username}</li>
-						<li className="logout">Logout</li>
+						<li>
+							<Link to="/profile">{username}</Link>
+						</li>
+						<Link to="/">
+							<li className="logout">Logout</li>
+						</Link>
 					</ul>
 				</div>
 			</nav>
