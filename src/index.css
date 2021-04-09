@@ -33,6 +33,12 @@ h4 {
 	font-size: 2.2rem;
 }
 
+h6 {
+	font-size: 10rem;
+	font-weight: 400;
+	color: #5a5a5a;
+}
+
 a {
 	text-decoration: none;
 	color: #5a5a5a;

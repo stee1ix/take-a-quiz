@@ -22,6 +22,16 @@
 	overflow-x: auto;
 }
 
+.arrow {
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.arrow img {
+	width: 40px;
+}
+
 .topics-section::-webkit-scrollbar {
 	display: none;
 }

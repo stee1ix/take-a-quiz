@@ -1,20 +1,41 @@
 import React from "react";
 import "./navbar.style.css";
+import profileIcon from "../../assets/001-man.svg";
 import { Link } from "react-router-dom";
 
-const NavBar = () => {
+const Navbar = ({ username, profile }) => {
 	return (
-		<nav>
-			<ul>
-				<li className="login">
-					<Link to="/login">Login</Link>
-				</li>
-				<li className="register">
-					<Link to="/register">Register</Link>
-				</li>
-			</ul>
-		</nav>
+		<div className="navbar-main">
+			<nav className="nav">
+				<h2>
+					{profile ? (
+						<Link to="/selection">Take a Quiz...</Link>
+					) : (
+						"Pick Your Choice!"
+					)}
+				</h2>
+				<div className="options">
+					<ul>
+						<li>
+							<Link to="/profile">
+								<img
+									className={
+										profile
+											? "profileIcon hidden"
+											: "profileIcon"
+									}
+									src={profileIcon}
+									alt=""
+								/>
+							</Link>
+						</li>
+						<li>{username}</li>
+						<li className="logout">Logout</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
 	);
 };
 
-export default NavBar;
+export default Navbar;

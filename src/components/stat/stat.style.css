@@ -1,0 +1,16 @@
+.stat-main {
+	width: 30rem;
+	height: 20rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.stat-main hr {
+	height: 1px;
+	background-color: #13c7ee;
+	border: none;
+	width: 13rem;
+	margin-top: -3rem;
+}

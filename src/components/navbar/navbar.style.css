@@ -1,26 +1,36 @@
-nav {
+.nav {
 	display: flex;
-	width: 80%;
-	margin: auto;
-	justify-content: flex-end;
+	width: 90%;
+	height: 90px;
+	justify-content: space-between;
+	align-items: flex-end;
 }
 
-nav ul {
-	padding: 3rem 0 0 0;
+h2 {
+	font-weight: 400;
+}
+.nav ul {
 	list-style: none;
 	display: flex;
+	height: 90px;
 	align-items: center;
 }
 
-nav ul li {
-	font-family: "Spartan", sans-serif;
-	font-size: 2.3rem;
-	padding: 1rem 0rem 0rem 3rem;
+.nav ul img {
+	width: 6rem;
+	border-radius: 50%;
+	box-shadow: 0px 3px 2px 0.01px #b1b1b1;
 }
 
-.login {
-	font-weight: lighter;
+.profileIcon.hidden {
+	display: none;
 }
-.register {
-	font-weight: 450;
+
+.nav ul li {
+	font-family: "Spartan", sans-serif;
+	font-size: 2.3rem;
+}
+
+.logout {
+	font-weight: 200;
 }

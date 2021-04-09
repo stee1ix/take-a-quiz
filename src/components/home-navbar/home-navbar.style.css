@@ -1,0 +1,26 @@
+nav {
+	display: flex;
+	width: 80%;
+	margin: auto;
+	justify-content: flex-end;
+}
+
+nav ul {
+	padding: 3rem 0 0 0;
+	list-style: none;
+	display: flex;
+	align-items: center;
+}
+
+nav ul li {
+	font-family: "Spartan", sans-serif;
+	font-size: 2.3rem;
+	padding: 1rem 0rem 0rem 3rem;
+}
+
+.login {
+	font-weight: lighter;
+}
+.register {
+	font-weight: 450;
+}
