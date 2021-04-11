@@ -5,40 +5,35 @@ import Navbar from "../../components/navbar/navbar.component";
 import Stat from "../../components/stat/stat.component";
 import profileIcon from "../../assets/001-man.svg";
 
-class Profile extends React.Component {
-	// constructor() {
-	// 	super();
-	// }
-
-	render() {
-		return (
-			<div className="profile-main">
-				<Navbar username="stee1ix" profile />
-				<div className="profile-content">
-					<div className="profile-icon">
-						<img src={profileIcon} alt="profile icon" />
-						<h3>stee1ix</h3>
-					</div>
-					<div className="stats">
-						<Stat
-							className="attempted"
-							title={"Attempted"}
-							value={"5"}
-						/>
-						<Stat className="rank" title={"Rank"} value={"1"} />
-						<Stat
-							className="total"
-							title={"Total Points"}
-							value={"21"}
-						/>
-					</div>
+const Profile = ({ user }) => {
+	const { username, attempted, rank, total } = user;
+	return (
+		<div className="profile-main">
+			<Navbar username={username} profile />
+			<div className="profile-content">
+				<div className="profile-icon">
+					<img src={profileIcon} alt="profile icon" />
+					<h3>{username}</h3>
 				</div>
-				<div className="footer">
-					<Footer />
+				<div className="stats">
+					<Stat
+						className="attempted"
+						title={"Attempted"}
+						value={attempted}
+					/>
+					<Stat className="rank" title={"Rank"} value={rank} />
+					<Stat
+						className="total"
+						title={"Total Points"}
+						value={total}
+					/>
 				</div>
 			</div>
-		);
-	}
-}
+			<div className="footer">
+				<Footer />
+			</div>
+		</div>
+	);
+};
 
 export default Profile;
