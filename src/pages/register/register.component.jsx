@@ -12,9 +12,11 @@ const Register = () => {
 					Dive deep into the sea of questions
 				</h3>
 			</div>
-			<Credential name="Username" type="text" />
-			<Credential name="Password" type="password" />
-			<button className="regsiter-button">REGISTER</button>
+			<form>
+				<Credential name="Username" type="text" />
+				<Credential name="Password" type="password" />
+				<button className="regsiter-button">REGISTER</button>
+			</form>
 			<h4 className="login-option">
 				Already have an account!{" "}
 				<Link to="./login">

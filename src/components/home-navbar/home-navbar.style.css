@@ -1,12 +1,21 @@
+.home-nav-main {
+	width: 90%;
+	height: 10rem;
+	margin: auto;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
 nav {
 	display: flex;
-	width: 80%;
+	flex: 2;
 	margin: auto;
 	justify-content: flex-end;
 }
 
 nav ul {
-	padding: 3rem 0 0 0;
+	padding: 0rem 0 0 0;
 	list-style: none;
 	display: flex;
 	align-items: center;

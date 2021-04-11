@@ -6,9 +6,9 @@ import Stat from "../../components/stat/stat.component";
 import profileIcon from "../../assets/001-man.svg";
 
 class Profile extends React.Component {
-	constructor() {
-		super();
-	}
+	// constructor() {
+	// 	super();
+	// }
 
 	render() {
 		return (

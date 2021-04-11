@@ -1,7 +1,7 @@
 import React from "react";
 import "./credential.style.css";
 
-const Credential = ({ name, type }) => {
+const Credential = ({ name, value, type, onChange }) => {
 	return (
 		<div className="credential-main">
 			<div className="form">
@@ -11,6 +11,7 @@ const Credential = ({ name, type }) => {
 					spellCheck="false"
 					type={type}
 					id={name}
+					onChange={onChange}
 				/>
 				<label htmlFor={name} className="label-name">
 					<span className="content-name">{name}</span>

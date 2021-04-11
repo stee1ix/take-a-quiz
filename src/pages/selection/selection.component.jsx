@@ -3,21 +3,21 @@ import SelectionCategory from "../../components/selection-category/selection-cat
 import Navbar from "../../components/navbar/navbar.component";
 import Footer from "../../components/footer/footer.component";
 import "./selection.style.css";
+import HomePageNavBar from "../../components/home-navbar/home-navbar.component";
 
-class Selection extends React.Component {
-	constructor(props) {
-		super(props);
-	}
-
-	render() {
-		return (
-			<div className="selection-main">
+const Selection = ({ username }) => {
+	return (
+		<div className="selection-main">
+			{username ? (
 				<Navbar username="stee1ix" />
-				<SelectionCategory />
-				<Footer />
-			</div>
-		);
-	}
-}
+			) : (
+				<HomePageNavBar selection />
+			)}
+
+			<SelectionCategory />
+			<Footer />
+		</div>
+	);
+};
 
 export default Selection;
