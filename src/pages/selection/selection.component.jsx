@@ -9,7 +9,7 @@ const Selection = ({ username }) => {
 	return (
 		<div className="selection-main">
 			{username ? (
-				<Navbar username="stee1ix" />
+				<Navbar username={username} />
 			) : (
 				<HomePageNavBar selection />
 			)}

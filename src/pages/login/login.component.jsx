@@ -32,7 +32,6 @@ class Login extends React.Component {
 				user.password === this.state.password
 			) {
 				this.props.loadUser(user);
-				this.props.routeChange();
 			}
 		});
 		event.preventDefault();
