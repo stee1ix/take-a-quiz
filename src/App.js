@@ -1,10 +1,8 @@
 import React from "react";
 import { Switch, Route, Redirect } from "react-router-dom";
 import "./App.css";
-import Question from "./components/question/question.component";
 import Homepage from "./pages/homepage/homepage.component";
 import Login from "./pages/login/login.component";
-import Playing from "./pages/playing/playing.component";
 import Profile from "./pages/profile/profile.component";
 import Register from "./pages/register/register.component";
 import Selection from "./pages/selection/selection.component";
@@ -95,7 +93,6 @@ class App extends React.Component {
 					<Route path="/profile">
 						<Profile user={this.state.user} />
 					</Route>
-					<Route path="/question" component={Question} />
 				</Switch>
 			</div>
 		);

@@ -15,13 +15,11 @@ class SelectionCategory extends React.Component {
 	}
 
 	openQuiz = (questions) => {
-		this.setState(
-			{ isOn: true, questions: questions },
-			console.log(this.state.questions)
-		);
+		this.setState({ isOn: true, questions: questions });
 	};
 
 	render() {
+		console.log(this.state.questions);
 		const { groups } = this.state;
 		return (
 			<div className="quiz-main">
@@ -35,7 +33,9 @@ class SelectionCategory extends React.Component {
 							/>
 						))}
 					</div>
-				) : null}
+				) : (
+					<Playing questions={this.state.questions} />
+				)}
 			</div>
 		);
 	}

@@ -1,0 +1,78 @@
+.question-main {
+	width: 80%;
+	margin: auto;
+}
+
+.question {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	border-right: 3px solid #13c7ee;
+	border-bottom: 3px solid #13c7ee;
+	height: 15rem;
+	box-shadow: 6px 6px 12px 2px rgba(0, 0, 0, 0.49);
+	-webkit-box-shadow: 6px 6px 16px -3px rgba(0, 0, 0, 0.49);
+	-moz-box-shadow: 6px 6px 12px 2px rgba(0, 0, 0, 0.49);
+}
+
+.options {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	gap: 4rem;
+	padding: 6rem 0 5rem 0;
+}
+
+.options h5 {
+	font-weight: 300;
+	font-size: 3.5rem;
+}
+
+.option1 {
+	grid-column-start: 1/2;
+	grid-row-start: 1/2;
+	padding: 1.5rem 2rem 1rem 2rem;
+	border: 1px solid #a0a0a0;
+	cursor: pointer;
+}
+.option1:hover {
+	outline: 3px solid #13c7ee;
+	outline-offset: -3px;
+}
+
+.option2 {
+	grid-column-start: 2/3;
+	grid-row-start: 1/2;
+	padding: 1.5rem 2rem 1rem 2rem;
+	border: 1px solid #a0a0a0;
+	cursor: pointer;
+}
+.option2:hover {
+	outline: 3px solid #13c7ee;
+	outline-offset: -3px;
+}
+
+.option3 {
+	grid-column: 1/2;
+	grid-row: 2/3;
+	padding: 1.5rem 2rem 1rem 2rem;
+	border: 1px solid #a0a0a0;
+	cursor: pointer;
+}
+.option3:hover {
+	outline: 3px solid #13c7ee;
+	outline-offset: -3px;
+}
+
+.option4 {
+	grid-column: 2/3;
+	grid-row: 2/3;
+	padding: 1.5rem 2rem 1rem 2rem;
+	border: 1px solid #a0a0a0;
+	cursor: pointer;
+}
+.option4:hover {
+	outline: 3px solid #13c7ee;
+	outline-offset: -3px;
+}
