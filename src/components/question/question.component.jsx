@@ -39,7 +39,7 @@ class Question extends React.Component {
 					<h5>{question}</h5>
 				</div>
 
-				<div className="options">
+				<div className="ques-options">
 					<div onClick={this.option1Click} className="option1">
 						<h5>{option1}</h5>
 					</div>

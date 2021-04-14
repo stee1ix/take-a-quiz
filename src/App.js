@@ -75,7 +75,7 @@ class App extends React.Component {
 					</Route>
 					<Route exact path="/register">
 						{this.state.isSignedIn ? (
-							<Redirect exact to="/selection" />
+							<Redirect to="/selection" />
 						) : (
 							<Register
 								registerUser={this.registerUser}
@@ -84,7 +84,7 @@ class App extends React.Component {
 							/>
 						)}
 					</Route>
-					<Route exact path="/selection">
+					<Route path="/selection">
 						<Selection
 							username={this.state.user.username}
 							openQuiz={this.openQuiz}

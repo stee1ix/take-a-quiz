@@ -3,3 +3,44 @@
 	margin: auto;
 	padding: 6rem 0 10rem 0;
 }
+
+.result-main {
+	width: 60%;
+	margin: auto;
+	text-align: center;
+}
+
+.result-main hr {
+	background-color: #13c7ee;
+	height: 2px;
+	border: none;
+	margin: 3rem 0 5rem 0;
+}
+
+.score-img {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.score-img h1 {
+	font-size: 18rem;
+	color: #5a5a5a;
+	font-weight: 400;
+}
+
+.score-img img {
+	width: 26rem;
+	box-shadow: 6px 6px 5px 0px rgba(0, 0, 0, 0.23);
+	-webkit-box-shadow: 6px 6px 5px 0px rgba(0, 0, 0, 0.23);
+	-moz-box-shadow: 6px 6px 5px 0px rgba(0, 0, 0, 0.23);
+}
+
+.score h2 {
+	font-weight: 200;
+	color: #5a5a5a;
+}
+
+.total-score {
+	font-size: 13rem;
+}
