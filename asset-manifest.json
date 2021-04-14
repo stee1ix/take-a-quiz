@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/take-a-quiz/static/css/main.e50f8820.chunk.css",
+    "main.js": "/take-a-quiz/static/js/main.98840404.chunk.js",
+    "main.js.map": "/take-a-quiz/static/js/main.98840404.chunk.js.map",
+    "runtime-main.js": "/take-a-quiz/static/js/runtime-main.30ee6e73.js",
+    "runtime-main.js.map": "/take-a-quiz/static/js/runtime-main.30ee6e73.js.map",
+    "static/js/2.60dd9d7c.chunk.js": "/take-a-quiz/static/js/2.60dd9d7c.chunk.js",
+    "static/js/2.60dd9d7c.chunk.js.map": "/take-a-quiz/static/js/2.60dd9d7c.chunk.js.map",
+    "static/js/3.7c39d4e9.chunk.js": "/take-a-quiz/static/js/3.7c39d4e9.chunk.js",
+    "static/js/3.7c39d4e9.chunk.js.map": "/take-a-quiz/static/js/3.7c39d4e9.chunk.js.map",
+    "index.html": "/take-a-quiz/index.html",
+    "service-worker.js": "/take-a-quiz/service-worker.js",
+    "service-worker.js.map": "/take-a-quiz/service-worker.js.map",
+    "static/css/main.e50f8820.chunk.css.map": "/take-a-quiz/static/css/main.e50f8820.chunk.css.map",
+    "static/js/2.60dd9d7c.chunk.js.LICENSE.txt": "/take-a-quiz/static/js/2.60dd9d7c.chunk.js.LICENSE.txt",
+    "static/media/001-man.4b684e29.svg": "/take-a-quiz/static/media/001-man.4b684e29.svg",
+    "static/media/arrow.9373140c.svg": "/take-a-quiz/static/media/arrow.9373140c.svg",
+    "static/media/logout_astra.5ae007f6.jpg": "/take-a-quiz/static/media/logout_astra.5ae007f6.jpg",
+    "static/media/man-illus.ff2832a9.gif": "/take-a-quiz/static/media/man-illus.ff2832a9.gif",
+    "static/media/woman-illus.4461085e.gif": "/take-a-quiz/static/media/woman-illus.4461085e.gif"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.30ee6e73.js",
+    "static/js/2.60dd9d7c.chunk.js",
+    "static/css/main.e50f8820.chunk.css",
+    "static/js/main.98840404.chunk.js"
+  ]
+}
