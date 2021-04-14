@@ -5,7 +5,7 @@ import Footer from "../../components/footer/footer.component";
 import "./selection.style.css";
 import HomePageNavBar from "../../components/home-navbar/home-navbar.component";
 
-const Selection = ({ username }) => {
+const Selection = ({ username, isSignedIn }) => {
 	return (
 		<div className="selection-main">
 			{username ? (
@@ -14,7 +14,7 @@ const Selection = ({ username }) => {
 				<HomePageNavBar selection />
 			)}
 
-			<SelectionCategory />
+			<SelectionCategory isSignedIn={isSignedIn} />
 			<Footer />
 		</div>
 	);

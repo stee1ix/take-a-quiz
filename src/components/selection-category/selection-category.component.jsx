@@ -28,6 +28,7 @@ class SelectionCategory extends React.Component {
 						{groups.map(({ id, ...otherGroupProps }) => (
 							<Group
 								openQuiz={this.openQuiz}
+								isSignedIn={this.props.isSignedIn}
 								key={id}
 								{...otherGroupProps}
 							/>

@@ -1,7 +1,7 @@
 var Users = [
 	{
-		username: "a",
-		password: "1",
+		username: "stee1ix",
+		password: "123",
 		attempted: 5,
 		rank: 1,
 		total: 23,

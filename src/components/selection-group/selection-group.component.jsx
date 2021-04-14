@@ -3,7 +3,7 @@ import "./selection-group.style.css";
 import TopicItem from "../topic-item/topic-item.component";
 import Arrow from "../../assets/arrow.svg";
 
-const Group = ({ name, topics, openQuiz }) => {
+const Group = ({ name, topics, openQuiz, isSignedIn }) => {
 	return (
 		<div className="selection-group-main">
 			<div className="group-title">
@@ -15,9 +15,10 @@ const Group = ({ name, topics, openQuiz }) => {
 					<TopicItem
 						key={topic.id}
 						name={topic.name}
-						imgUrl={topic.imgUrl}
+						imageUrl={topic.imageUrl}
 						questions={topic.questions}
 						openQuiz={openQuiz}
+						isSignedIn={isSignedIn}
 					/>
 				))}
 			</div>

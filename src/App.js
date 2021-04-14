@@ -3,6 +3,7 @@ import { Switch, Route, Redirect } from "react-router-dom";
 import "./App.css";
 import Homepage from "./pages/homepage/homepage.component";
 import Login from "./pages/login/login.component";
+import Logout from "./pages/logout/logout.component";
 import Profile from "./pages/profile/profile.component";
 import Register from "./pages/register/register.component";
 import Selection from "./pages/selection/selection.component";
@@ -12,9 +13,9 @@ const initState = {
 	isSignedIn: false,
 	user: {
 		username: "",
-		attempted: null,
-		rank: null,
-		total: null,
+		attempted: 0,
+		rank: 0,
+		total: 0,
 	},
 };
 
@@ -35,6 +36,10 @@ class App extends React.Component {
 				total: user.total,
 			},
 		});
+	};
+
+	logout = () => {
+		this.setState(initState);
 	};
 
 	registerUser = ({ username, password }) => {
@@ -88,10 +93,14 @@ class App extends React.Component {
 						<Selection
 							username={this.state.user.username}
 							openQuiz={this.openQuiz}
+							isSignedIn={this.state.isSignedIn}
 						/>
 					</Route>
 					<Route path="/profile">
 						<Profile user={this.state.user} />
+					</Route>
+					<Route path="/logout">
+						<Logout logout={this.logout} />
 					</Route>
 				</Switch>
 			</div>

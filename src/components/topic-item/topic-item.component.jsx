@@ -1,7 +1,6 @@
 import React from "react";
 import "./topic-item.style.css";
-import Astra from "../../assets/test-img.jpg";
-// import Question from "../../components/question/question.component";
+import { Link } from "react-router-dom";
 
 class TopicItem extends React.Component {
 	openQuizTrigger = (event) => {
@@ -10,11 +9,21 @@ class TopicItem extends React.Component {
 	};
 
 	render() {
-		const { name } = this.props;
+		const { name, isSignedIn, imageUrl } = this.props;
 		return (
 			<div className="topic-item">
 				<div className="image">
-					<img onClick={this.openQuizTrigger} src={Astra} alt="" />
+					{isSignedIn ? (
+						<img
+							onClick={this.openQuizTrigger}
+							src={imageUrl}
+							alt=""
+						/>
+					) : (
+						<Link to="/login">
+							<img src={imageUrl} alt="" />
+						</Link>
+					)}
 				</div>
 
 				<h4>{name}</h4>

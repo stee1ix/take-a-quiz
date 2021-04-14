@@ -43,7 +43,7 @@ class Login extends React.Component {
 				<div className="login-title">
 					<h1 className="login">Login</h1>
 					<h3 className="dive-deep">
-						Dive deep into the sea of questions
+						Dive deep into the sea of quizzes
 					</h3>
 				</div>
 				<form>
