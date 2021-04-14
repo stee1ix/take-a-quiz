@@ -11,7 +11,7 @@ const Navbar = ({ username, profile }) => {
 					{profile ? (
 						<Link to="/selection">Take a Quiz...</Link>
 					) : (
-						"Pick Your Choice!"
+						"Let's Do This!"
 					)}
 				</h2>
 				<div className="options">
