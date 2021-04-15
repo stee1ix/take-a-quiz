@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/take-a-quiz/static/css/main.ed1e6b0c.chunk.css",
-    "main.js": "/take-a-quiz/static/js/main.c048d215.chunk.js",
-    "main.js.map": "/take-a-quiz/static/js/main.c048d215.chunk.js.map",
+    "main.css": "/take-a-quiz/static/css/main.5623592d.chunk.css",
+    "main.js": "/take-a-quiz/static/js/main.16f5b496.chunk.js",
+    "main.js.map": "/take-a-quiz/static/js/main.16f5b496.chunk.js.map",
     "runtime-main.js": "/take-a-quiz/static/js/runtime-main.30ee6e73.js",
     "runtime-main.js.map": "/take-a-quiz/static/js/runtime-main.30ee6e73.js.map",
     "static/js/2.60dd9d7c.chunk.js": "/take-a-quiz/static/js/2.60dd9d7c.chunk.js",
@@ -12,27 +12,24 @@
     "index.html": "/take-a-quiz/index.html",
     "service-worker.js": "/take-a-quiz/service-worker.js",
     "service-worker.js.map": "/take-a-quiz/service-worker.js.map",
-    "static/css/main.ed1e6b0c.chunk.css.map": "/take-a-quiz/static/css/main.ed1e6b0c.chunk.css.map",
+    "static/css/main.5623592d.chunk.css.map": "/take-a-quiz/static/css/main.5623592d.chunk.css.map",
     "static/js/2.60dd9d7c.chunk.js.LICENSE.txt": "/take-a-quiz/static/js/2.60dd9d7c.chunk.js.LICENSE.txt",
     "static/media/001-man.4b684e29.svg": "/take-a-quiz/static/media/001-man.4b684e29.svg",
     "static/media/arrow.9373140c.svg": "/take-a-quiz/static/media/arrow.9373140c.svg",
     "static/media/basketball.0b648307.jpg": "/take-a-quiz/static/media/basketball.0b648307.jpg",
-    "static/media/c++.2441702d.svg": "/take-a-quiz/static/media/c++.2441702d.svg",
     "static/media/cricket.43494f86.jpg": "/take-a-quiz/static/media/cricket.43494f86.jpg",
-    "static/media/css.5da907d7.svg": "/take-a-quiz/static/media/css.5da907d7.svg",
     "static/media/football.308d7d5e.jpg": "/take-a-quiz/static/media/football.308d7d5e.jpg",
-    "static/media/html.aff8a9cb.svg": "/take-a-quiz/static/media/html.aff8a9cb.svg",
-    "static/media/java.3c5854fc.svg": "/take-a-quiz/static/media/java.3c5854fc.svg",
+    "static/media/geography.a02e129f.jpg": "/take-a-quiz/static/media/geography.a02e129f.jpg",
+    "static/media/history.1704f3cf.jpg": "/take-a-quiz/static/media/history.1704f3cf.jpg",
     "static/media/logout_astra.5ae007f6.jpg": "/take-a-quiz/static/media/logout_astra.5ae007f6.jpg",
     "static/media/man-illus.d2db7135.gif": "/take-a-quiz/static/media/man-illus.d2db7135.gif",
     "static/media/olympic.3e2b18b2.svg": "/take-a-quiz/static/media/olympic.3e2b18b2.svg",
-    "static/media/python.063da199.svg": "/take-a-quiz/static/media/python.063da199.svg",
     "static/media/woman-illus.d5b747de.gif": "/take-a-quiz/static/media/woman-illus.d5b747de.gif"
   },
   "entrypoints": [
     "static/js/runtime-main.30ee6e73.js",
     "static/js/2.60dd9d7c.chunk.js",
-    "static/css/main.ed1e6b0c.chunk.css",
-    "static/js/main.c048d215.chunk.js"
+    "static/css/main.5623592d.chunk.css",
+    "static/js/main.16f5b496.chunk.js"
   ]
 }
