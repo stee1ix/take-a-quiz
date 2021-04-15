@@ -2,8 +2,8 @@
 	display: grid;
 	grid-template-columns: repeat(3, minmax(5rem, 1fr));
 	grid-template-rows: 2fr 1fr 2fr;
-	height: 100vh;
 }
+
 .main img {
 	object-fit: cover;
 	align-self: center;
@@ -53,4 +53,23 @@
 	grid-row: 2/4;
 	align-self: center;
 	justify-self: center;
+}
+
+@media only screen and (max-width: 600px) {
+	.main #man {
+		align-self: center;
+		justify-self: flex-end;
+		grid-column: 1/2;
+		grid-row: 1/2;
+	}
+
+	.main #woman {
+		grid-row: 3/4;
+		align-self: center;
+		justify-self: flex-start;
+	}
+
+	.main .title h1 {
+		font-size: 4rem;
+	}
 }

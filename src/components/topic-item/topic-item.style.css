@@ -18,3 +18,18 @@
 	font-family: "Spartan", sans-serif;
 	padding-top: 1.5rem;
 }
+
+@media only screen and (max-width: 600px) {
+	.topic-item {
+		padding-right: 5rem;
+	}
+
+	.topic-item .image {
+		width: 15rem;
+		height: 15rem;
+	}
+
+	.topic-item h4 {
+		font-size: 2rem;
+	}
+}

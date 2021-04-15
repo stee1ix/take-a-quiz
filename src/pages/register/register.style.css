@@ -24,11 +24,11 @@
 	justify-content: space-between;
 }
 
-h1 {
+.register-title h1 {
 	font-weight: 300;
 }
 
-h3 {
+.register-title h3 {
 	font-family: "Spartan", sans-serif;
 	font-weight: 300;
 }
@@ -55,4 +55,26 @@ button {
 
 button:focus {
 	outline: none;
+}
+
+@media only screen and (max-width: 600px) {
+	.register-title {
+		justify-content: space-around;
+		height: 10rem;
+	}
+
+	.register-title h1 {
+		font-size: 4.6rem;
+	}
+
+	.register-title h3 {
+		font-size: 1.6rem;
+	}
+
+	.register-option {
+		font-size: 1.7rem;
+	}
+	.register-main form {
+		justify-content: space-evenly;
+	}
 }

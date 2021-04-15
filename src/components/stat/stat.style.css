@@ -7,10 +7,26 @@
 	align-items: center;
 }
 
+.stat-main h3 {
+	color: #5a5a5a;
+}
+
 .stat-main hr {
 	height: 1px;
 	background-color: #13c7ee;
 	border: none;
 	width: 13rem;
 	margin-top: -3rem;
+}
+
+@media only screen and (max-width: 600px) {
+	.stat-main {
+		width: 20rem;
+		margin-top: 2rem;
+	}
+
+	.stat-main h6 {
+		font-weight: 200;
+		color: #5a5a5a;
+	}
 }

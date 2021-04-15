@@ -32,3 +32,23 @@
 	position: relative;
 	bottom: -11.5rem;
 }
+
+@media only screen and (max-width: 600px) {
+	.profile-content {
+		width: auto;
+	}
+
+	.profile-icon img {
+		width: 7rem;
+	}
+
+	.stats {
+		display: flex;
+		flex-direction: column;
+		padding-top: 1rem;
+	}
+
+	.footer {
+		position: static;
+	}
+}

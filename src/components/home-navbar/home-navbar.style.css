@@ -5,6 +5,7 @@
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
+	padding-bottom: 2rem;
 }
 
 nav {
@@ -15,7 +16,6 @@ nav {
 }
 
 nav ul {
-	padding: 0rem 0 0 0;
 	list-style: none;
 	display: flex;
 	align-items: center;
@@ -32,4 +32,22 @@ nav ul li {
 }
 .register {
 	font-weight: 450;
+}
+
+@media only screen and (max-width: 600px) {
+	.home-nav-main {
+		height: 1rem;
+	}
+
+	.home-nav-main h2 {
+		margin: auto;
+		padding: 1rem 0 0 0;
+		font-size: 2rem;
+		font-weight: 500;
+	}
+
+	nav ul li {
+		font-size: 2rem;
+		padding: 1rem 0rem 0rem 1rem;
+	}
 }

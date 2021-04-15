@@ -16,7 +16,7 @@ class Logout extends React.Component {
 				<div className="logout-nav">
 					<Link to="/">
 						<div className="return-button">
-							<h3 className="logout-nav-text">Return to Home</h3>
+							<h3 className="logout-nav-text">Home</h3>
 							<img
 								className="return-arrow"
 								src={Arrow}

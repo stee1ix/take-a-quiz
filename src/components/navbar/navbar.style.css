@@ -6,8 +6,9 @@
 	align-items: flex-end;
 }
 
-h2 {
+.nav h2 {
 	font-weight: 400;
+	color: #5a5a5a;
 }
 .nav ul {
 	list-style: none;
@@ -33,4 +34,20 @@ h2 {
 
 .logout {
 	font-weight: 200;
+}
+
+@media only screen and (max-width: 600px) {
+	.nav h2 {
+		font-size: 2rem;
+		font-weight: 600;
+		margin-bottom: 3rem;
+	}
+
+	.nav ul img {
+		width: 4rem;
+	}
+
+	.nav ul li {
+		font-size: 1.7rem;
+	}
 }

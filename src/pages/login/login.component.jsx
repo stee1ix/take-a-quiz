@@ -50,13 +50,11 @@ class Login extends React.Component {
 					<Credential
 						name="Username"
 						type="text"
-						// value={this.state.username}
 						onChange={this.handleUsernameChange}
 					/>
 					<Credential
 						name="Password"
 						type="password"
-						// value={this.state.password}
 						onChange={this.handlePasswordChange}
 					/>
 					<button

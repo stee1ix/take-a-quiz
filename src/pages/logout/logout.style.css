@@ -39,3 +39,35 @@
 	font-size: 5rem;
 	padding: 4rem 0;
 }
+
+@media only screen and (max-width: 600px) {
+	.logout-nav {
+		margin-top: 1rem;
+		height: 5rem;
+	}
+
+	.return-button {
+		width: 20rem;
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	.logout-nav-text {
+		font-size: 2rem;
+		font-weight: 300;
+		padding-right: 2px;
+	}
+
+	.return-arrow {
+		width: 3rem;
+	}
+
+	.logout-text {
+		font-size: 2rem;
+		padding: 4rem 0 2rem 0;
+	}
+
+	.logout-container img {
+		width: 30rem;
+	}
+}

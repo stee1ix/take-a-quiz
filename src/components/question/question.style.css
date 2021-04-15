@@ -10,10 +10,11 @@
 	text-align: center;
 	border-right: 3px solid #13c7ee;
 	border-bottom: 3px solid #13c7ee;
-	height: 15rem;
-	box-shadow: 6px 6px 12px 2px rgba(0, 0, 0, 0.49);
+	height: auto;
+	padding: 4rem;
+	box-shadow: 6px 6px 16px -3px rgba(0, 0, 0, 0.49);
 	-webkit-box-shadow: 6px 6px 16px -3px rgba(0, 0, 0, 0.49);
-	-moz-box-shadow: 6px 6px 12px 2px rgba(0, 0, 0, 0.49);
+	-moz-box-shadow: 6px 6px 16px -3px rgba(0, 0, 0, 0.49);
 }
 
 .ques-options {
@@ -75,4 +76,59 @@
 .option4:hover {
 	outline: 3px solid #13c7ee;
 	outline-offset: -3px;
+}
+
+@media only screen and (max-width: 600px) {
+	.question-main {
+		width: 90%;
+	}
+
+	.question {
+		padding: 1rem;
+		box-shadow: 3px 3px 8px -3px rgba(0, 0, 0, 0.49);
+		-webkit-box-shadow: 3px 3px 8px -3px rgba(0, 0, 0, 0.49);
+		-moz-box-shadow: 3px 3px 8px -3px rgba(0, 0, 0, 0.49);
+	}
+
+	.question h5 {
+		font-size: 2rem;
+		font-weight: bold;
+	}
+
+	.ques-options {
+		display: flex;
+		flex-direction: column;
+		padding: 3rem 0 1rem 0;
+		justify-content: center;
+		gap: 2rem;
+	}
+
+	.ques-options h5 {
+		font-weight: bold;
+		font-size: 2rem;
+	}
+
+	.option1 {
+		padding: 1rem 2rem;
+		border: 1px solid #a0a0a0;
+		cursor: pointer;
+	}
+
+	.option2 {
+		padding: 1rem 2rem;
+		border: 1px solid #a0a0a0;
+		cursor: pointer;
+	}
+
+	.option3 {
+		padding: 1rem 2rem;
+		border: 1px solid #a0a0a0;
+		cursor: pointer;
+	}
+
+	.option4 {
+		padding: 1rem 2rem;
+		border: 1px solid #a0a0a0;
+		cursor: pointer;
+	}
 }
