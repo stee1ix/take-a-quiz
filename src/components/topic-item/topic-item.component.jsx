@@ -5,11 +5,13 @@ import football from "../../assets/images/football.jpg";
 import cricket from "../../assets/images/cricket.jpg";
 import basketball from "../../assets/images/basketball.jpg";
 import olympic from "../../assets/images/olympic.svg";
-import cpp from "../../assets/images/c++.svg";
-import python from "../../assets/images/python.svg";
-import java from "../../assets/images/java.svg";
-import css from "../../assets/images/css.svg";
-import html from "../../assets/images/html.svg";
+// import cpp from "../../assets/images/c++.svg";
+// import python from "../../assets/images/python.svg";
+// import java from "../../assets/images/java.svg";
+// import css from "../../assets/images/css.svg";
+// import html from "../../assets/images/html.svg";
+import history from "../../assets/images/history.jpg";
+import geography from "../../assets/images/geography.jpg";
 
 class TopicItem extends React.Component {
 	openQuizTrigger = (event) => {
@@ -27,16 +29,20 @@ class TopicItem extends React.Component {
 				return basketball;
 			case "olympic":
 				return olympic;
-			case "cpp":
-				return cpp;
-			case "python":
-				return python;
-			case "java":
-				return java;
-			case "html":
-				return html;
-			case "css":
-				return css;
+			// case "cpp":
+			// 	return cpp;
+			// case "python":
+			// 	return python;
+			// case "java":
+			// 	return java;
+			// case "html":
+			// 	return html;
+			// case "css":
+			// 	return css;
+			case "history":
+				return history;
+			case "geography":
+				return geography;
 
 			default:
 				break;
