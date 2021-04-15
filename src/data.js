@@ -7,7 +7,7 @@ const DATA = [
 			{
 				id: 1,
 				name: "Football",
-				imageUrl: "/images/football.jpg",
+				imageUrl: "football",
 				questions: [
 					{
 						id: 1,
@@ -113,17 +113,17 @@ const DATA = [
 			{
 				id: 2,
 				name: "Cricket",
-				imageUrl: "/images/cricket.jpg",
+				imageUrl: "cricket",
 			},
 			{
 				id: 3,
 				name: "Basketball",
-				imageUrl: "/images/basketball.jpg",
+				imageUrl: "basketball",
 			},
 			{
 				id: 4,
 				name: "Olympics",
-				imageUrl: "/images/Olympic.svg",
+				imageUrl: "olympic",
 			},
 		],
 	},
@@ -135,27 +135,27 @@ const DATA = [
 			{
 				id: 1,
 				name: "C++",
-				imageUrl: "/images/c++.svg",
+				imageUrl: "cpp",
 			},
 			{
 				id: 2,
 				name: "Python",
-				imageUrl: "/images/Python.svg",
+				imageUrl: "python",
 			},
 			{
 				id: 3,
 				name: "Java",
-				imageUrl: "/images/java.svg",
+				imageUrl: "java",
 			},
 			{
 				id: 4,
 				name: "CSS",
-				imageUrl: "/images/CSS.svg",
+				imageUrl: "css",
 			},
 			{
 				id: 5,
 				name: "HTML",
-				imageUrl: "/images/HTML.svg",
+				imageUrl: "html",
 			},
 		],
 		// },
