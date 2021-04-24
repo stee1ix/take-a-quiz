@@ -14,6 +14,7 @@ const initState = {
 		username: '',
 		attempted: 0,
 		total: 0,
+		id: '',
 	},
 };
 
@@ -31,6 +32,7 @@ class App extends React.Component {
 				username: user.username,
 				attempted: user.attempted,
 				total: user.total,
+				id: user.id,
 			},
 		});
 	};
@@ -38,24 +40,6 @@ class App extends React.Component {
 	logout = () => {
 		this.setState(initState);
 	};
-
-	// registerUser = ({ username, password }) => {
-	// 	return new Promise((res, rej) => {
-	// 		Users.push({
-	// 			username: username,
-	// 			password: password,
-	// 			attempted: 0,
-	// 			total: 0,
-	// 		});
-	// 		console.log(Users);
-	// 		res({
-	// 			username: username,
-	// 			password: password,
-	// 			attempted: 0,
-	// 			total: 0,
-	// 		});
-	// 	});
-	// };
 
 	render() {
 		console.log(this.state);
@@ -86,12 +70,12 @@ class App extends React.Component {
 					<Route path="/selection">
 						<Selection
 							username={this.state.user.username}
-							openQuiz={this.openQuiz}
+							id={this.state.user.id}
 							isSignedIn={this.state.isSignedIn}
 						/>
 					</Route>
 					<Route path="/profile">
-						<Profile user={this.state.user} />
+						<Profile id={this.state.user.id} />
 					</Route>
 					<Route path="/logout">
 						<Logout logout={this.logout} />

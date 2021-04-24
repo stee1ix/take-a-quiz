@@ -35,7 +35,14 @@ class Register extends React.Component {
 			}),
 		})
 			.then((response) => response.json())
-			.then((data) => this.props.loadUser(data));
+			.then((data) => {
+				this.props.loadUser({
+					username: data.username,
+					attempted: data.attempted,
+					total: data.total,
+					id: data._id,
+				});
+			});
 
 		event.preventDefault();
 	};

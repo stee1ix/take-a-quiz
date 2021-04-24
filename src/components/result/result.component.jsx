@@ -3,7 +3,16 @@ import './result.style.css';
 import ResultAstra from '../../assets/result-astra.jpg';
 
 class Result extends React.Component {
-	componentDidMount() {}
+	async componentDidMount() {
+		await fetch('http://localhost:5000/update/', {
+			method: 'put',
+			headers: { 'Content-Type': 'application/json' },
+			body: JSON.stringify({
+				score: this.props.score,
+				id: this.props.id,
+			}),
+		});
+	}
 
 	render() {
 		return (

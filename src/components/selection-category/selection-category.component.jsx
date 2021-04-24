@@ -1,8 +1,8 @@
-import React from "react";
-import DATA from "../../data";
-import Playing from "../../pages/playing/playing.component";
-import Group from "../selection-group/selection-group.component";
-import "./selection-category.style.css";
+import React from 'react';
+import DATA from '../../data';
+import Playing from '../../pages/playing/playing.component';
+import Group from '../selection-group/selection-group.component';
+import './selection-category.style.css';
 
 class SelectionCategory extends React.Component {
 	constructor(props) {
@@ -21,6 +21,7 @@ class SelectionCategory extends React.Component {
 	render() {
 		console.log(this.state.questions);
 		const { groups } = this.state;
+		const { isSignedIn, id } = this.props;
 		return (
 			<div className="quiz-main">
 				{!this.state.isOn ? (
@@ -28,14 +29,14 @@ class SelectionCategory extends React.Component {
 						{groups.map(({ id, ...otherGroupProps }) => (
 							<Group
 								openQuiz={this.openQuiz}
-								isSignedIn={this.props.isSignedIn}
+								isSignedIn={isSignedIn}
 								key={id}
 								{...otherGroupProps}
 							/>
 						))}
 					</div>
 				) : (
-					<Playing questions={this.state.questions} />
+					<Playing id={id} questions={this.state.questions} />
 				)}
 			</div>
 		);

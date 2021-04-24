@@ -39,6 +39,7 @@ class Login extends React.Component {
 					username: data.username,
 					attempted: data.attempted,
 					total: data.total,
+					id: data._id,
 				});
 			});
 

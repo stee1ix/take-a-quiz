@@ -28,7 +28,7 @@ class Playing extends React.Component {
 	render() {
 		console.log(this.state);
 		const { currentQuestion, score } = this.state;
-		const { questions } = this.props;
+		const { questions, id } = this.props;
 		return (
 			<div className="playing-main">
 				{currentQuestion < questions.length ? (
@@ -44,7 +44,7 @@ class Playing extends React.Component {
 						onResponse={this.onResponse}
 					/>
 				) : (
-					<Result score={score} questions={questions} />
+					<Result score={score} id={id} questions={questions} />
 				)}
 			</div>
 		);
