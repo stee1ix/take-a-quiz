@@ -4,7 +4,7 @@ import ResultAstra from '../../assets/result-astra.jpg';
 
 class Result extends React.Component {
 	async componentDidMount() {
-		await fetch('http://localhost:5000/update/', {
+		await fetch('https://take-a-quiz-api.herokuapp.com/update/', {
 			method: 'put',
 			headers: { 'Content-Type': 'application/json' },
 			body: JSON.stringify({

@@ -26,7 +26,7 @@ class Register extends React.Component {
 	};
 
 	handleSubmit = (event) => {
-		fetch('http://localhost:5000/auth/register', {
+		fetch('https://take-a-quiz-api.herokuapp.com/auth/register', {
 			method: 'post',
 			headers: { 'Content-Type': 'application/json' },
 			body: JSON.stringify({

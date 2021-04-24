@@ -17,13 +17,16 @@ class Profile extends React.Component {
 	}
 
 	async componentDidMount() {
-		const response = await fetch('http://localhost:5000/getstat', {
-			method: 'post',
-			headers: { 'Content-Type': 'application/json' },
-			body: JSON.stringify({
-				id: this.props.id,
-			}),
-		});
+		const response = await fetch(
+			'https://take-a-quiz-api.herokuapp.com/getstat',
+			{
+				method: 'post',
+				headers: { 'Content-Type': 'application/json' },
+				body: JSON.stringify({
+					id: this.props.id,
+				}),
+			}
+		);
 		const json = await response.json();
 		this.setState(json);
 	}

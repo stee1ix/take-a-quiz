@@ -25,7 +25,7 @@ class Login extends React.Component {
 	};
 
 	handleSubmit = (event) => {
-		fetch('http://localhost:5000/auth/login', {
+		fetch('https://take-a-quiz-api.herokuapp.com/auth/login', {
 			method: 'post',
 			headers: { 'Content-Type': 'application/json' },
 			body: JSON.stringify({
