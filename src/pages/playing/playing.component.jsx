@@ -26,7 +26,6 @@ class Playing extends React.Component {
 	};
 
 	render() {
-		console.log(this.state);
 		const { currentQuestion, score } = this.state;
 		const { questions, id } = this.props;
 		return (

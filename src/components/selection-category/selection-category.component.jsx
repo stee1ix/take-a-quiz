@@ -19,7 +19,6 @@ class SelectionCategory extends React.Component {
 	};
 
 	render() {
-		console.log(this.state.questions);
 		const { groups } = this.state;
 		const { isSignedIn, id } = this.props;
 		return (
