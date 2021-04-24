@@ -1,12 +1,12 @@
-import React from "react";
-import "./profile.style.css";
-import Footer from "../../components/footer/footer.component";
-import Navbar from "../../components/navbar/navbar.component";
-import Stat from "../../components/stat/stat.component";
-import profileIcon from "../../assets/001-man.svg";
+import React from 'react';
+import './profile.style.css';
+import Footer from '../../components/footer/footer.component';
+import Navbar from '../../components/navbar/navbar.component';
+import Stat from '../../components/stat/stat.component';
+import profileIcon from '../../assets/001-man.svg';
 
 const Profile = ({ user }) => {
-	const { username, attempted, rank, total } = user;
+	const { username, attempted, total } = user;
 	return (
 		<div className="profile-main">
 			<Navbar username={username} profile />
@@ -18,13 +18,12 @@ const Profile = ({ user }) => {
 				<div className="stats">
 					<Stat
 						className="attempted"
-						title={"Attempted"}
+						title={'Attempted'}
 						value={attempted}
 					/>
-					<Stat className="rank" title={"Rank"} value={rank} />
 					<Stat
 						className="total"
-						title={"Total Points"}
+						title={'Total Points'}
 						value={total}
 					/>
 				</div>

@@ -1,7 +1,7 @@
-import React from "react";
-import "./playing.style.css";
-import Question from "../../components/question/question.component";
-import ResultAstra from "../../assets/result-astra.jpg";
+import React from 'react';
+import './playing.style.css';
+import Question from '../../components/question/question.component';
+import Result from '../../components/result/result.component';
 
 const initState = {
 	score: 0,
@@ -44,23 +44,7 @@ class Playing extends React.Component {
 						onResponse={this.onResponse}
 					/>
 				) : (
-					<div className="result-main">
-						<h1 className="result-message">Well Done !</h1>
-						<hr />
-						<div className="score-img">
-							<img src={ResultAstra} alt="" />
-							<div className="score">
-								<h2>You're score is</h2>
-								<h1>
-									{score}
-									{"/"}
-									<span className="total-score">
-										{questions.length}
-									</span>
-								</h1>
-							</div>
-						</div>
-					</div>
+					<Result score={score} questions={questions} />
 				)}
 			</div>
 		);

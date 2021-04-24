@@ -1,15 +1,15 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import Credential from "../../components/credential/credential.component";
-import "./register.style.css";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import Credential from '../../components/credential/credential.component';
+import './register.style.css';
 
 class Register extends React.Component {
 	constructor(props) {
 		super(props);
 
 		this.state = {
-			username: "",
-			password: "",
+			username: '',
+			password: '',
 		};
 
 		this.handleUsernameChange = this.handleUsernameChange.bind(this);
@@ -26,9 +26,16 @@ class Register extends React.Component {
 	};
 
 	handleSubmit = (event) => {
-		this.props
-			.registerUser(this.state)
-			.then((user) => this.props.loadUser(user));
+		fetch('http://localhost:5000/auth/register', {
+			method: 'post',
+			headers: { 'Content-Type': 'application/json' },
+			body: JSON.stringify({
+				username: this.state.username,
+				password: this.state.password,
+			}),
+		})
+			.then((response) => response.json())
+			.then((data) => this.props.loadUser(data));
 
 		event.preventDefault();
 	};
@@ -55,15 +62,14 @@ class Register extends React.Component {
 					/>
 					<button
 						onClick={this.handleSubmit}
-						className="regsiter-button"
-					>
+						className="regsiter-button">
 						REGISTER
 					</button>
 				</form>
 				<h4 className="login-option">
-					Already have an account!{" "}
+					Already have an account!{' '}
 					<Link to="./login">
-						<span style={{ color: "#13c7ee" }}>Login</span>
+						<span style={{ color: '#13c7ee' }}>Login</span>
 					</Link>
 				</h4>
 			</div>

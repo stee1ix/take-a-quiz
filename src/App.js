@@ -1,20 +1,18 @@
-import React from "react";
-import { Switch, Route, Redirect } from "react-router-dom";
-import "./App.css";
-import Homepage from "./pages/homepage/homepage.component";
-import Login from "./pages/login/login.component";
-import Logout from "./pages/logout/logout.component";
-import Profile from "./pages/profile/profile.component";
-import Register from "./pages/register/register.component";
-import Selection from "./pages/selection/selection.component";
-import Users from "./users";
+import React from 'react';
+import { Switch, Route, Redirect } from 'react-router-dom';
+import './App.css';
+import Homepage from './pages/homepage/homepage.component';
+import Login from './pages/login/login.component';
+import Logout from './pages/logout/logout.component';
+import Profile from './pages/profile/profile.component';
+import Register from './pages/register/register.component';
+import Selection from './pages/selection/selection.component';
 
 const initState = {
 	isSignedIn: false,
 	user: {
-		username: "",
+		username: '',
 		attempted: 0,
-		rank: 0,
 		total: 0,
 	},
 };
@@ -32,7 +30,6 @@ class App extends React.Component {
 			user: {
 				username: user.username,
 				attempted: user.attempted,
-				rank: user.rank,
 				total: user.total,
 			},
 		});
@@ -42,25 +39,23 @@ class App extends React.Component {
 		this.setState(initState);
 	};
 
-	registerUser = ({ username, password }) => {
-		return new Promise((res, rej) => {
-			Users.push({
-				username: username,
-				password: password,
-				attempted: 0,
-				rank: 0,
-				total: 0,
-			});
-			console.log(Users);
-			res({
-				username: username,
-				password: password,
-				attempted: 0,
-				rank: 0,
-				total: 0,
-			});
-		});
-	};
+	// registerUser = ({ username, password }) => {
+	// 	return new Promise((res, rej) => {
+	// 		Users.push({
+	// 			username: username,
+	// 			password: password,
+	// 			attempted: 0,
+	// 			total: 0,
+	// 		});
+	// 		console.log(Users);
+	// 		res({
+	// 			username: username,
+	// 			password: password,
+	// 			attempted: 0,
+	// 			total: 0,
+	// 		});
+	// 	});
+	// };
 
 	render() {
 		console.log(this.state);
@@ -83,7 +78,6 @@ class App extends React.Component {
 							<Redirect to="/selection" />
 						) : (
 							<Register
-								registerUser={this.registerUser}
 								loadUser={this.loadUser}
 								routeChange={this.routeChange}
 							/>
