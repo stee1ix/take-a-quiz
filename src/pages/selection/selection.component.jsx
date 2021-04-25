@@ -5,11 +5,11 @@ import Footer from '../../components/footer/footer.component';
 import './selection.style.css';
 import HomePageNavBar from '../../components/home-navbar/home-navbar.component';
 
-const Selection = ({ username, isSignedIn, id }) => {
+const Selection = ({ username, isSignedIn, id, profileImgNo }) => {
 	return (
 		<div className="selection-main">
 			{username ? (
-				<Navbar username={username} />
+				<Navbar username={username} profileImgNo={profileImgNo} />
 			) : (
 				<HomePageNavBar selection />
 			)}

@@ -41,11 +41,15 @@ class App extends React.Component {
 		this.setState(initState);
 	};
 
+	profileImgNo = Math.floor(Math.random() * 12 + 1);
+
 	render() {
 		return (
 			<div className="app">
 				<Switch>
-					<Route exact path="/" component={Homepage} />
+					<Route exact path="/">
+						<Homepage />
+					</Route>
 					<Route exact path="/login">
 						{this.state.isSignedIn ? (
 							<Redirect exact to="/selection" />
@@ -71,10 +75,14 @@ class App extends React.Component {
 							username={this.state.user.username}
 							id={this.state.user.id}
 							isSignedIn={this.state.isSignedIn}
+							profileImgNo={this.profileImgNo}
 						/>
 					</Route>
 					<Route path="/profile">
-						<Profile id={this.state.user.id} />
+						<Profile
+							id={this.state.user.id}
+							profileImgNo={this.profileImgNo}
+						/>
 					</Route>
 					<Route path="/logout">
 						<Logout logout={this.logout} />
