@@ -1,7 +1,7 @@
-import React from "react";
-import "./credential.style.css";
+import React from 'react';
+import './credential.style.css';
 
-const Credential = ({ name, value, type, onChange }) => {
+const Credential = ({ name, type, onChange }) => {
 	return (
 		<div className="credential-main">
 			<div className="form">

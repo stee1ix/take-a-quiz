@@ -16,15 +16,15 @@ class Login extends React.Component {
 		this.handleSubmit = this.handleSubmit.bind(this);
 	}
 
-	handleUsernameChange = (event) => {
+	handleUsernameChange = event => {
 		this.setState({ username: event.target.value });
 	};
 
-	handlePasswordChange = (event) => {
+	handlePasswordChange = event => {
 		this.setState({ password: event.target.value });
 	};
 
-	handleSubmit = (event) => {
+	handleSubmit = event => {
 		fetch('https://take-a-quiz-api.herokuapp.com/auth/login', {
 			method: 'post',
 			headers: { 'Content-Type': 'application/json' },
@@ -33,8 +33,8 @@ class Login extends React.Component {
 				password: this.state.password,
 			}),
 		})
-			.then((response) => response.json())
-			.then((data) => {
+			.then(response => response.json())
+			.then(data => {
 				this.props.loadUser({
 					username: data.username,
 					attempted: data.attempted,
@@ -74,7 +74,7 @@ class Login extends React.Component {
 					</button>
 				</form>
 				<h4 className="login-option">
-					Don't have an account!{' '}
+					Don't have an account!
 					<Link to="./register">
 						<span style={{ color: '#13c7ee' }}>Register</span>
 					</Link>
